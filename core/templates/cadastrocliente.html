@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form action="">
+        {% csrf_token %}
+        <div class="row cordefundoAreaTrabalho py-5">
+            <div class="col-lg-12">
+                <h2 class="text-white text-center fs-3">Cadastro de cliente</h2>
+            </div>
+            <div class="col-lg-12">
+                <label class="form-label text-white">Cliente</label>
+                <input class="form-control"type="text" placeholder="Digite o nome do cliente">
+                <label class="form-label text-white">Endereço</label>
+                <input class="form-control"type="text" placeholder="Digite o endereço">
+                <label class="form-label text-white">Telefone</label>
+                <input class="form-control"type="text" placeholder="Digite o telefone do cliente">
+                <label class="form-label text-white">CPF</label>
+                <input class="form-control"type="text" placeholder="Digite o CPF do cliente">
+                <p class="form-label text-warning">Digite apenas os números</p>
+            </div>
+            <div class="col-lg-12 text-end pt-3">
+                <button class="btn btn-success mx-3" type="submit">Cadastrar</button>
+                <a href="{% url 'index' %}" class="btn btn-warning" type="submit">Voltar</a>
+            </div>
+        </div>
+    </form>
+{% endblock %}

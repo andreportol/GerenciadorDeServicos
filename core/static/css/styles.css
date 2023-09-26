@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: "Poppins", sans-serif; 
+    margin: 0px;
+    padding: 0px; 
+    background-color: #ffffff; 
+}
+/* configurando o rodapé  para que fique no final da tela */
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.cordefundo{
+    background-color: #005183;
+}
+
+.cordefundoAreaTrabalho{
+    background-color: #005183;
+}
+.conteudo{
+    flex: 1 0 auto;
+}
+
+.rodape{
+    flex-shrink: 0;
+    background-color: #005183;
+    text-align: center;   
+}
